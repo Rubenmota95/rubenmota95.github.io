@@ -9,18 +9,23 @@
 }
 
 body {
-  background-color: #63B4D1 !important;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   text-align: center;
 }
 
 h1, h2, h3, p, a {
   font-family: 'Varela Round', sans-serif;
-  color: #3DA35D;
+  color: white;
+}
+
+h1 {
+  font-size: 80px!important;
 }
 
 p{
   color: #4C6085;
   margin-bottom: 40px;
+  font-size: 17px!important;
 }
 
 a {
@@ -29,58 +34,52 @@ a {
 }
 
 a:hover {
-  color: #3DA35D;
-}
-
-h1 > a {
-  color: #3DA35D;
-}
-
-@media (max-width: 2600px){
-  .container {
-    width: 980px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: #FFFAE3;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-  }
-}
-
-@media (max-width: 1500px){
-  .container {
-    width: 720px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: #FFFAE3;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-  }
+  color: #273247
 }
 
 
-@media (max-width: 720px){
-  .container {
-    width: 500px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: #FFFAE3;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-  }
+.projects {
+  color: #4C6085!important;
 }
 
-@media (max-width: 540px){
-  .container {
-    width: 300px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: #FFFAE3;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-  }
+.container {
+  margin-bottom: 0px;
+  transition: ease 0.2s;
 }
 
+.container-titles-projects  h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.container-titles-about {
+  margin-top: 75px;
+}
+
+.container:hover {
+
+}
+
+
+
+.about-card {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: .5rem;
+  padding: 15px;
+  transition: ease 0.2s;
+}
+
+.about-card > h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.about-card:hover{
+  transform: translateY(-40px);
+  transform: translateX(-10px);
+  box-shadow: 10px 5px 5px white;
+}
 
 .btn-orange {
   padding: 10px;
@@ -124,7 +123,7 @@ h1 > a {
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: #FFFAE3;
+  background-color: #0005;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -138,4 +137,25 @@ h1 > a {
 .nav-linked {
   color: #4C6085;
   margin-right: 50px;
+}
+
+.card {
+
+}
+
+/* .navbar {
+  position: sticky!important;
+  top: 0;
+  width: 100%;
+} */
+
+img {
+  width: 450px;
+  height: 500px;
+  border-radius: .5rem;
+  box-shadow: 4px 2px 5px white;
+}
+
+.profile-img {
+  margin-top: 25px;
 }
