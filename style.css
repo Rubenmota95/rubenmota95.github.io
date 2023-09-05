@@ -99,7 +99,6 @@ a:hover {
   width: 400px;
   margin: 10px auto;
   padding: 5px;
-  background-color: #FFFAE3 !important;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
@@ -140,7 +139,7 @@ a:hover {
 }
 
 .card {
-
+  margin-top: 200px;
 }
 
 /* .navbar {
@@ -158,4 +157,11 @@ img {
 
 .profile-img {
   margin-top: 25px;
+}
+
+i {
+  font-size: 70px;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
 }
