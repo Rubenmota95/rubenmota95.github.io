@@ -387,3 +387,8 @@ div > button {
 #about-me {
   -webkit-transition: all 0.5s ease;
 }
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
