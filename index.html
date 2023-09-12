@@ -13,153 +13,253 @@
     <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Orbitron:wght@400;500;600;700;800;900&family=Raleway&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@100&family=Varela+Round&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="banner shadow-lg">
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
-      <!-- Container wrapper -->
-      <div class="container-fluid d-flex justify-content-between">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#" style="font-size: 23px">Ruben Mota</a>
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Left links -->
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
-            </li>
-            <!-- Navbar dropdown -->
-          </ul>
-          <!-- Left links -->
-        </div>
-        <!-- Collapsible wrapper -->
-      </div>
-      <!-- Container wrapper -->
-    </nav>
-    <!-- Navbar -->
-    <div class="container px-4">
-      <div class="row gx-5">
-        <div class="col-12 col-lg-7">
-          <div>
-            <h1 class="container-titles-about">About me</h1>
-          </div>
-          <div class="about-card">
-          <p>I am a dedicated and ambitious Junior Full-Stack Web Developer with a background in the Portuguese army.
-            Having served for six years, including three years representing Portugal in the NATO HQ and European Military
-              Committee based in Belgium, I have cultivated valuable qualities such as discipline, teamwork, and adaptability.</p>
-          <p>Seeking a fresh career path, I committed myself to the Le Wagon 9-week Web Development bootcamp, where I
-            acquired a solid foundation and practical experience in various web development technologies. I am proficient
-            in HTML, CSS, JavaScript, and frameworks like Ruby on Rails. Additionally, I have hands-on experience using
-            version control systems like GitHub and deploying web applications on platforms such as Heroku.</p>
-          <p>As a junior developer, I understand the importance of continuous learning and thrive in a supportive and
-            collaborative environment. I am passionate about problem-solving, creativity, and staying up-to-date with
-            the latest industry trends. Contributing to dynamic projects and expanding my expertise in web development excites me.</p>
-          <p>With a strong work ethic, attention to detail, and a willingness to learn, I am confident in my ability to
-            make positive contributions to any team. I am open to new opportunities and challenges that will allow
-            me to grow and enhance my skills as a Junior Full-Stack Web Developer.</p>
-          </div>
-        </div>
-        <div class="col-12 col-lg-5">
-          <img src="./images/unnamed.jpeg" alt="Personal Photo" class="profile-img">
-        </div>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong shadow" style="position: sticky; top: 0; width: 100%;">
+  <!-- Container wrapper -->
+  <div class="container-fluid d-flex justify-content-between">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#" style="font-size: 23px"><img src="./images/unnamed.jpeg" alt="profile photo" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 15px;">RUBEN MOTA</a>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
     </div>
-    <div class="container container-titles-projects">
-        <h1>My projects</h1>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right-aligned links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Add your right-aligned li elements here -->
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div>
+      <h1 class="text-center justify-content-center banner-title">HI, I'M RUBEN MOTA</h1>
+      <p class="text-center mt-3" style="color: rgb(223, 223, 223)">A focused Junior Full-Stack Web Developer who builds <br>Websites and Web Applications.</p>
+    </div>
+    <div class="d-flex justify-content-center mt-5 mb-3">
+      <button class="btn-projects">MY PROJECTS</button>
+    </div>
+    <div class="d-flex justify-content-center mt-5 links">
+      <a href="https://github.com/Rubenmota95" target="_blank">
+        <i class="fa-brands fa-square-github small-logos"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/rubenmota95/" target="_blank">
+        <i class="fa-brands fa-linkedin small-logos"></i>
+      </a>
+    </div>
+  </div>
+  <div class="about-section">
+    <div class="container container-titles-projects mt-5 mb-5">
+        <h3 class="text-center">ABOUT ME</h1>
+        <div class="small-bar text-center"></div>
+        <p class="text-center">Learn more information about me and my skills in programming</p>
     </div>
     <div class="container px-4">
       <div class="row gx-5">
         <div class="col-12 col-lg-7">
           <div>
-            <img src="./images/Astroride.png" alt="Personal Photo" style="width: 600px">
+            <h2 class="mb-3">Know me!</h2>
+            <p>I am a dedicated and ambitious Junior Full-Stack Web Developer, I thrive in a supportive and
+              collaborative environment, and my goal is always to improve the success of any kind of business. You can check my own <strong>Projects</strong></p>
+            <p>I also understand the importance of continuous learning I am passionate about problem-solving, creativity, and staying up-to-date with
+              the latest industry trends.</p>
+            <p>This being said, I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my <strong>Skills</strong> and experience then don't hesitate to <strong>Contact me</strong></p>
           </div>
         </div>
         <div class="col-12 col-lg-5">
-          <div class="about-card">
-            <h3><a href="https://astroride.herokuapp.com/" class="text-decoration-none projects" target="_blank">AstroRide</a></h3>
+          <div class="skills">
+            <h2 class="mb-3">Skills</h2>
+            <div class="d-flex">
+              <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <p class="text-center">HTML</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="text-center">CSS</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-square-js"></i>
+                <p class="text-center">JavaScript</p>
+              </div>
+              <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p class="text-center">SQL</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="skill">
+                <i class="fa-solid fa-gem"></i>
+                <p class="text-center">Ruby</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-python"></i>
+                <p class="text-center">Python</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-vuejs"></i>
+                <p class="text-center">Vue.js</p>
+              </div>
+              <div class="skill">
+                <i class="fa-brands fa-github"></i>
+                <p class="text-center">GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <div class="container container-titles-projects mt-5 mb-5">
+          <h3 class="text-center">MY PROJECTS</h1>
+          <div class="small-bar text-center"></div>
+          <p class="text-center">Have a look on all the projects I've completed so far</p>
+      </div>
+      <div class="container px-4" style="margin-top: 100px;">
+        <div class="row gx-5">
+          <div class="col-12 col-lg-7">
+            <div>
+              <h2 class="mb-3">MoneyCounter</h2>
+              <p>
+                A remarkable project, designed to facilitate expense and income management on mobile devices.
+                The platform offers comprehensive categorization capabilities, allowing users to efficiently organize their financial <strong>Transactions</strong>.
+              </p>
+              <p>
+                Moreover, it incorporates a captivating feature called <strong>Goals</strong>, enabling users to set and strive for specific financial objectives.
+                Additionally, it has a unique feature designed for <strong>Groups</strong> empowers users to share expenses with friends,
+                facilitating clear visibility into owed debts and outstanding amounts.
+              </p>
+              <a href="www.moneycounter.pro" target="_blank">
+                <button class="btn-projects" style="margin-top: 15px;">Check Website</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <img src="./images/Moneycounter.png" style="width: 350px; height: 100%;">
+          </div>
+        </div>
+      </div>
+      <div class="container px-4" style="margin-top: 130px;">
+        <div class="row gx-5">
+          <div class="col-12 col-lg-7">
+            <div>
+              <img src="./images/Astroride.png" style="width: 650px; height: 100%; margin-top: -30px;">
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <h2 class="mb-3">Astroride</h2>
             <p>
-              This collaborative endeavor involved a team of four individuals, focused on creating a
-              replica of Airbnb's distinctive features, but with a unique twist of renting out spaceships.
+              This project was focused on creating a replica of <strong>Airbnb's</strong> distinctive features,
+              but with a unique twist of renting out spaceships.
             </p>
             <p>
-              Within this project, users have the capability to both list their own spaceships for rent,
-              specifying available dates and prices, as well as rent spaceships from other users for specific dates.
+              Within this project, the user have the capability to both list their own spaceships for rent,
+              specifying available <strong>Dates</strong> and <strong>Prices</strong>,
+              as well as rent spaceships from other users for specific dates.
             </p>
-            <p>
-              As a Full-Stack developer, my responsibilities encompassed a diverse range of tasks,
-              including proficiency in Rails, Ruby, JavaScript, HTML, CSS, GitHub, and Heroku.
-            </p>
-            <a href="https://astroride.herokuapp.com/" target="_blank" style="text-decoration: none">
-              <button class="btn-grad">Check Site</button>
+            <a href="www.moneycounter.pro" target="_blank">
+              <button class="btn-projects" style="margin-top: 15px;">Check Website</button>
             </a>
           </div>
         </div>
       </div>
-
-      <div class="container px-4" style="margin-top: 170px">
-        <div class="row gx-5">
-          <div class="col-12 col-lg-8">
-            <div class="about-card">
-              <h3><a href="https://www.moneycounter.pro/" class="text-decoration-none projects" target="_blank">MoneyCounter </a></h3>
-              <p>
-                A remarkable project completed by a team of four individuals for the culminating assignment of the esteemed Le Wagon Bootcamp,
-                this is a fully functional website designed to facilitate expense and income management on mobile devices.
-                The platform offers comprehensive categorization capabilities, allowing users to efficiently organize their financial transactions.
-              </p>
-              <p>
-                Moreover, it incorporates a captivating feature called Goals, enabling users to set and strive for specific financial objectives.
-                Additionally, the inclusion of a unique feature named Groups empowers users to share expenses with friends,
-                facilitating clear visibility into owed debts and outstanding amounts.
-              </p>
-              <p>
-                As a Full-Stack developer, my responsibilities encompassed a diverse range of tasks,
-                including proficiency in Rails, Ruby, JavaScript, HTML, CSS, GitHub, and Heroku.
-              </p>
-              <div>
-                <a href="https://www.moneycounter.pro/" target="_blank" style="text-decoration: none">
-                  <button class="btn-grad">Check Site</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div>
-              <img src="./images/Moneycounter.png" alt="Personal Photo" style="height: 700px">
-            </div>
-          </div>
-        </div>
-
-
     </div>
-    <h1>
-      Contacts
-    </h1>
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <div class="about-card">
-          <p>
-            Send me an e-mail to <strong style="font-size: 23px">Rubenlisboa95@gmail.com</strong>
-          </p>
-          <p>
-            Follow me on my socials
-          </p>
-          <a href="https://github.com/Rubenmota95" target="_blank">
-            <i class="fa-brands fa-square-github small-logos text-dark"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/rubenmota95/" target="_blank">
-            <i class="fa-brands fa-linkedin small-logos text-dark"></i>
-          </a>
-        </div>
+    <div class="contact-section">
+      <div class="container container-titles-projects mt-5 mb-5">
+          <h3 class="text-center">CONTACTS</h1>
+          <div class="small-bar text-center"></div>
+          <p class="text-center">If you have any doubts or want to discuss a job opportunity, feel free to fill the form.</p>
+          <p class="text-center">I will answer you as soon as possible!</p>
       </div>
+      <section class="mb-4 container">
+        <div class="row">
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mailto:rubenlisboa95@gmail.com" method="post" enctype="text/plain">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="">Name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="">Email</label>
+                                <input type="text" id="email" name="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <label for="message">Message</label>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text-center text-md-left">
+                      <input type="submit" value="Send" class="btn-projects" style="margin-top: 15px; color: white; padding: 10px 30px">
+                  </div>
+                </form>
+                <div class="status"></div>
+            </div>
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0 mt-3">
+                    <li>
+                      <a href="https://github.com/Rubenmota95" target="_blank">
+                        <i class="fa-brands fa-square-github small-logos"></i>
+                      </a>
+                      <p>GitHub</p>
+                    <li>
+                      <a href="https://www.linkedin.com/in/rubenmota95/" target="_blank">
+                        <i class="fa-brands fa-linkedin small-logos"></i>
+                      </a>
+                      <p>LinkedIn</p>
+                    </li>
+                    <li><i class="fa-solid fa-envelope"></i>
+                        <p>Rubenlisboa95@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </section>
     </div>
+    <p class="text-center copyright">
+      © Copyright 2023. Made by <a href="/">Ruben Mota</a>
+    </p>
   </body>
 </html>
+<!--
+I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
+
+I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming
+
+I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me. -->

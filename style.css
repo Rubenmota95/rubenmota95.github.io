@@ -8,29 +8,49 @@
   border-radius: 50%;
 }
 
-body {
+.banner {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  height: 100vh;
+}
+
+.banner-title {
+  margin-top: 150px;
+
+}
+
+body {
+  background-color: white;
   text-align: center;
 }
 
-h1, h2, h3, p, a {
-  font-family: 'Varela Round', sans-serif;
-  color: white;
+h1, h2, p, a {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(223, 223, 223);
+}
+
+h3 {
+  color: black;
+  font-size: 3.5rem!important;
+  font-family: 'Oswald', sans-serif;
 }
 
 h1 {
-  font-size: 80px!important;
+  font-size: 6.5rem!important;
+}
+
+h2 {
+  color: black!important;
 }
 
 p{
-  color: #4C6085;
+  color: #666;
   margin-bottom: 40px;
-  font-size: 17px!important;
+  font-size: 1.35rem;
 }
 
 a {
   text-decoration: none;
-  color: #4C6085;
+  color: white;
 }
 
 a:hover {
@@ -149,23 +169,39 @@ a:hover {
 } */
 
 img {
-  width: 450px;
-  height: 500px;
+  width: 200px;
+  height: 180px;
   border-radius: .5rem;
-  box-shadow: 4px 2px 5px white;
 }
 
 .profile-img {
-  margin-top: 25px;
+
 }
 
-i {
-  font-size: 70px;
-  color: white;
+.links i {
+  font-size: 40px;
   margin-right: 10px;
   margin-left: 10px;
+  color: rgb(205, 205, 205);
+  transition: ease .2s
 }
 
+.links i:hover {
+  color: white;
+}
+
+.skills i {
+  font-size: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #666;
+  transition: ease .2s;
+  margin-right: 15px;
+}
+
+.skills i:hover {
+  color: #979797;
+}
 
 .btn-grad {
   background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
@@ -190,4 +226,103 @@ i {
 
 div > button {
   text-align: right;
+}
+
+.btn-projects {
+  display: inline-block;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px 23px;
+  border: 0;
+  color: #fff;
+  font-size: 17.5px;
+  background: #00d301;
+  background: -webkit-linear-gradient(-196deg,#00d301,#36c275 50%,#00a562);
+  background: -webkit-linear-gradient(164deg,#00d301,#36c275 50%,#00a562);
+  background: linear-gradient(286deg,#00d301,#36c275 50%,#00a562);
+  line-height: 30px;
+  font-weight: 800;
+  transition: background,color .1s ease-in-out;
+  border-radius: .7rem;
+  transition: ease 0.2s;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.btn-projects:hover {
+  font-size: 22px;
+  background: #029202;
+  background: -webkit-linear-gradient(-196deg,#00d301,#36c275 50%,#00a562);
+  background: -webkit-linear-gradient(164deg,#00d301,#36c275 50%,#00a562);
+  background: linear-gradient(286deg,#00d301,#36c275 50%,#00a562);
+}
+
+.navbar {
+  background-color: #E4E4E1;
+  background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  color: black!important;
+}
+
+.about-section {
+  padding-top: 50px;
+  background-color: white;
+}
+
+.project-section {
+  padding-top: 100px;
+  background-color: white;
+}
+
+.contact-section {
+  padding-top: 150px;
+  background-color: white;
+}
+
+.navbar li {
+  font-size: 20px;
+  margin-left: 30px;
+  transition: ease .2s;
+}
+
+.navbar li:hover {
+  opacity: .4;
+}
+
+.small-bar {
+  height: 5px;
+  width: 3rem;
+  border-radius: 5px;
+  background-color: #07d707;
+  margin: 0 auto;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.list-unstyled i {
+  color: black;
+  font-size: 40px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.copyright > a {
+  text-decoration: none!important;
+  font-size: 13px;
+  color: #999999;
+  transition: ease .2s;
+}
+
+.copyright > a:hover {
+  color: #b5b5b5;
 }
