@@ -261,6 +261,56 @@ div > button {
   text-decoration: none!important;
 }
 
+.btn-projects-link {
+  background-image: linear-gradient(to right, #41aa10 0%, #17cac7  51%, #4ccb11  100%);
+  margin: 10px;
+  padding: 5px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 7px #eee;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  border: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.btn-projects-link:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none!important;
+}
+
+.btn-projects-send {
+  background-image: linear-gradient(to right, #41aa10 0%, #17cac7  51%, #4ccb11  100%);
+  margin: 10px;
+  padding: 1px 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 7px #eee;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  border: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.btn-projects-send:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none!important;
+}
+
 .navbar {
   background-color: #E4E4E1;
   background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
