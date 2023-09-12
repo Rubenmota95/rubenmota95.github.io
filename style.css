@@ -24,14 +24,14 @@ body {
 }
 
 h1, h2, p, a {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Overpass', sans-serif;
   color: rgb(223, 223, 223);
 }
 
 h3 {
   color: black;
   font-size: 3.5rem!important;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Overpass', sans-serif;
 }
 
 h1 {
