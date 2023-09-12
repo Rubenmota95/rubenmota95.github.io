@@ -326,3 +326,12 @@ div > button {
 .copyright > a:hover {
   color: #b5b5b5;
 }
+
+.form-control:focus {
+  border-color: #2dd254!important;
+  box-shadow: 0 0 0 0.2rem rgba(33, 189, 69, 0.25)!important;
+}
+
+#about-me {
+  -webkit-transition: all 0.5s ease;
+}
