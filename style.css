@@ -14,8 +14,7 @@
 }
 
 .banner-title {
-  margin-top: 150px;
-
+  padding-top: 150px;
 }
 
 body {
@@ -180,6 +179,7 @@ img {
   width: 200px;
   height: 180px;
   border-radius: .5rem;
+  z-index: initial;
 }
 
 .profile-img {
@@ -318,6 +318,7 @@ div > button {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar a {
