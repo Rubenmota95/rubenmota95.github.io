@@ -1,27 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS User ID
+$(document).ready(function () {
+  $("form").on("submit", function (event) {
+      event.preventDefault();
 
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the page from refreshing
+      var form = $(this);
+      var formData = form.serialize();
 
-      // Collect form data
-      const formData = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          subject: document.getElementById("subject").value,
-          message: document.getElementById("message").value
-      };
+      $.ajax({
+          url: "https://formspree.io/f/xjkyvwyq",
+          method: "POST",
+          data: formData,
+          dataType: "json",
+          success: function (response) {
+              $(".status").html("<p style='color:green;'>Message sent successfully! Thank you for your contact.</p>");
+              form.trigger("reset");
+          },
+          error: function (xhr, status, error) {
+              $(".status").html("<p style='color:red;'>Failed to send message. Try again later.</p>");
+          }
+      });
 
-      // Send email using EmailJS
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
-          .then(function (response) {
-              console.log("Email sent successfully!", response);
-              alert("Message sent successfully!");
-              document.getElementById("contact-form").reset();
-          })
-          .catch(function (error) {
-              console.error("Email sending failed:", error);
-              alert("Failed to send the message. Please try again later.");
-          });
+      return false; // Prevent form redirection
   });
 });

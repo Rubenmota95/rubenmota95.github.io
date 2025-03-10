@@ -537,6 +537,19 @@ html {
   width: 100%;
 }
 
+.md-form label {
+  margin-bottom: 5px;
+}
+
+.md-form input, .md-form textarea {
+  margin-bottom: 15px;
+}
+
+
+.md-form {
+  padding-top: 0;
+}
+
 .btn-projects-send {
   width: 100%;
   padding: 10px 0;
