@@ -10,7 +10,7 @@
 
 .banner {
   /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
-  background-image: url(./images/actual.png);
+  background-image: url(./images/banner.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -150,18 +150,7 @@ a:active {
   font-size: 40px;
 }
 
-.navbar-lewagon {
-  justify-content: space-between;
-  background-color: #0005;
-}
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
 
 .nav-linked {
   color: #4C6085;
@@ -171,6 +160,104 @@ a:active {
 .card {
   margin-top: 200px;
 }
+
+/* Navbar container */
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between; /* This makes the space between the left and right parts */
+  align-items: center;
+  background-color: rgb(4, 53, 65);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Left section of the navbar (links) */
+.navbar-left {
+  display: flex; /* Aligns the links horizontally */
+  align-items: center;
+}
+
+/* Right section of the navbar (icons) */
+.navbar-right {
+  display: flex; /* Aligns the icons horizontally */
+  align-items: center;
+}
+
+/* Navbar links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 12px 0;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform 0.4s ease, opacity 0.4s ease, color 0.4s ease;
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+  color: #5ae124;
+  transform: translateY(-5px);
+}
+
+/* Animation: sliding in from the sides */
+.navbar a:nth-child(odd) {
+  animation: slideInLeft 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.navbar a:nth-child(even) {
+  animation: slideInRight 0.5s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+/* Sliding animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating effect for navbar links */
+.navbar a {
+  animation: floatUp 2s infinite alternate;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
 
 /* .navbar {
   position: sticky!important;
@@ -185,9 +272,6 @@ img {
   z-index: initial;
 }
 
-.profile-img {
-
-}
 
 .links i {
   font-size: 40px;
@@ -202,6 +286,7 @@ img {
   color: white;
 }
 
+
 .skills i {
   font-size: 100px;
   margin-right: 10px;
@@ -212,7 +297,7 @@ img {
 }
 
 .skills i:hover {
-  color: #979797;
+  color: #5ae124;
 }
 
 .btn-grad {
@@ -342,20 +427,6 @@ div > button {
   text-decoration: none!important;
 }
 
-.navbar {
-  background-color: #E4E4E1;
-  background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
- 	background-blend-mode: normal, multiply;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar a {
-  color: rgb(60, 60, 60)!important;
-}
-
 .about-section {
   padding-top: 50px;
   background-color: white;
@@ -371,15 +442,6 @@ div > button {
   background-color: white;
 }
 
-.navbar li {
-  font-size: 20px;
-  margin-left: 30px;
-  transition: ease .2s;
-}
-
-.navbar li:hover {
-  opacity: .4;
-}
 
 .small-bar {
   height: 5px;
@@ -427,4 +489,56 @@ div > button {
 
 html {
 	scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-section .container {
+  max-width: 800px; /* Adjust width as needed */
+  margin: auto; /* Centers the form */
+}
+
+#contact-form {
+  width: 100%;
+}
+
+#contact-form .row {
+  margin: 0; /* Removes unnecessary margins */
+}
+
+.md-form {
+  width: 100%;
+}
+
+.btn-projects-send {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
