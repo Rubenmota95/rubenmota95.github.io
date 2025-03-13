@@ -171,17 +171,17 @@ h3 {
 } */
 
 .header-text{
-  padding-top: 32%;
+  padding-top: 28%;
   font-size: 30px!important;
 }
 
 .header-text p {
-  font-size: 1.5rem;
+  font-size: 40px;
   color: white;
 }
 
 .header-text h1{
-  font-size: 60px!important;
+  font-size: 80px!important;
   color: white;
   margin-top: 20px;
 }
