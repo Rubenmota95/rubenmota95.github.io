@@ -593,7 +593,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 20px;
   text-align: center;
   font-size: 12px;
   transition: height 0.5s;
