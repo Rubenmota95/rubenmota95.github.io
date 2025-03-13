@@ -112,6 +112,7 @@ h3 {
 .navbar a:hover {
   color: #5ae124;
   transform: translateY(-5px);
+  text-decoration: none;
 }
 
 /* Animation: sliding in from the sides */
