@@ -30,11 +30,10 @@
     <div class="navbar" style="position: sticky; top: 0;">
       <div class="navbar-left">
         <a href="#home">Home</a>
-        <a href="#about-me">About Me</a>
+        <a href="#about-me">About</a>
         <a href="#projects-me">Projects</a>
         <a href="#contacts-me">Contacts</a>
       </div>
-
       <div class="navbar-right">
         <a href="https://github.com/Rubenmota95" target="_blank" class="mr-3">
           <i class="fa-brands fa-square-github"></i>
@@ -47,20 +46,19 @@
         </a>
       </div>
     </div>
-
-    <a id="home"></a>
-    <div class="banner shadow-lg" style="margin-top: 0">
-      <div>
-        <h1 class="banner-title" style="color: rgb(4, 75, 92); padding-top: 230px;">Ruben Mota </h1>
-        <p class="mt-1" style="color: rgb(23, 182, 222); padding-left: 100px;">A Cybersecurity Technician focused on protecting <br>Systems and Digital Assets.</p>
-      </div>
-
-      <!-- Inline content before the projects button -->
-      <div class="mt-2 mb-3" style="padding-left: 100px; padding-top: 20px;">
-        <a href="#projects-me"><button class="btn-projects">PROJECTS</button></a>
+    <div id="header">
+      <div class="container">
+        <a id="home"></a>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Ruben</span><br> Mota From Portugal</h1>
+          <p>Cybersecurity Technician</p>
+          <a href="#projects-me"><button class="button mt-5">PROJECTS</button></a>
+        </div>
       </div>
     </div>
-
+    <div class="wrapper">
+      <div class="blur-bottom"></div>
+    </div>
 
   <a id="about-me"></a>
   <div class="about-section">
@@ -72,113 +70,102 @@
     <div class="container px-4">
       <div class="row gx-5 align-items-center">
         <!-- About Me Text -->
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-6">
           <div class="justify">
             <p>I am a dedicated and ambitious Cybersecurity Technician who thrives in a supportive and collaborative environment. My goal is to contribute to the success of any business. Feel free to explore my <strong>Projects</strong>.</p>
             <p>I value continuous learning and am passionate about problem-solving, creativity, and staying up-to-date with the latest industry trends.</p>
             <p>With that in mind, I am open to job opportunities where I can contribute, learn, and grow. If you have a role that aligns with my <strong>skills</strong> and experience, please don't hesitate to contact me.</p>
           </div>
         </div>
-
-        <!-- About Me Image -->
-        <div class="col-12 col-lg-4 text-center">
-          <img src="./images/unnamed.jpeg" alt="Profile Picture" class="img-fluid shadow-5" style="width: 300px;">
+        <div class="col-12 col-lg-6 text-center mb-5">
+          <img src="./images/unnamed.jpeg" alt="Profile Picture" class="img-fluid shadow-5 avatar" style="width: 300px;">
         </div>
       </div>
     </div>
     <div class="container mt-5">
-      <h2 class="mb-3 text-center">Skills</h2>
+      <h3 class="mb-3 text-center">SKILLS</h3>
+      <div class="small-bar text-center"></div>
       <div class="d-flex flex-wrap justify-content-center mt-5">
-        <div class="skills">
-          <i class="fa-brands fa-linux"></i>
-          <p class="text-center">Linux</p>
-        </div>
-        <div class="skills">
-          <i class="fa-brands fa-python"></i>
-          <p class="text-center">Python</p>
-        </div>
-        <div class="skills">
-          <i class="fa-solid fa-gem"></i>
-          <p class="text-center">Ruby</p>
-        </div>
-        <div class="skills">
-          <i class="fa-brands fa-square-js"></i>
-          <p class="text-center">JavaScript</p>
-        </div>
-        <div class="skills">
-          <i class="fa-solid fa-database"></i>
-          <p class="text-center">SQL</p>
-        </div>
-        <div class="skills">
-          <i class="fa-brands fa-windows"></i>
-          <p class="text-center">Windows</p>
-        </div>
-        <div class="skills">
-          <i class="fa-solid fa-shield-halved"></i>
-          <p class="text-center">SIEM</p>
-        </div>
-        <div class="skills">
-          <i class="fa-solid fa-cloud"></i>
-          <p class="text-center">Azure</p>
+        <div class="skills-container">
+          <div class="skills">
+            <i class="fa-brands fa-python"></i>
+            <p class="text-center"></p>
+          </div>
+          <div class="skills">
+            <i class="fa-solid fa-gem"></i>
+            <p class="text-center"></p>
+          </div>
+          <div class="skills">
+            <i class="fa-brands fa-square-js"></i>
+            <p class="text-center"></p>
+          </div>
+          <div class="skills">
+            <i class="fa-solid fa-database"></i>
+            <p class="text-center"></p>
+          </div>
+          <div class="skills">
+            <i class="fa-brands fa-linux"></i>
+            <p class="text-center"></p>
+          </div>
+          <div class="skills">
+            <i class="fa-brands fa-windows"></i>
+            <p class="text-center"></p>
+          </div>
+          <div class="skills">
+            <i class="fa-brands fa-apple"></i>
+            <p class="text-center"></p>
+          </div>
+          <div class="skills">
+            <i class="fa-solid fa-cloud"></i>
+            <p class="text-center"></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-
-    <a id="projects-me"></a>
-    <div class="project-section">
-      <div class="container container-titles-projects mb-5">
-        <h3 class="text-center">MY PROJECTS</h1>
-        <div class="small-bar text-center"></div>
-
-      </div>
-      <div class="container px-4" style="margin-top: 100px;">
-        <div class="row gx-5">
-          <div class="col-12 col-lg-7">
-            <div>
-              <h2 class="mb-3">MoneyCounter</h2>
-              <div class="justify">
-                <p>
-                  A remarkable project, designed to facilitate expense and income management on mobile devices.
-                  The platform offers comprehensive categorization capabilities, allowing users to efficiently organize their financial <strong>Transactions</strong>.
-                </p>
-                <p>
-                  Moreover, it incorporates a captivating feature called <strong>Goals</strong>, enabling users to set and strive for specific financial objectives.
-                  Additionally, it has a unique feature designed for <strong>Groups</strong> empowers users to share expenses with friends,
-                  facilitating clear visibility into owed debts and outstanding amounts.
-                </p>
-              </div>
+  <a id="projects-me"></a>
+  <div class="project-section">
+    <div class="container container-titles-projects mb-5">
+      <h3 class="text-center">PROJECTS</h3>
+      <div class="small-bar text-center"></div>
+      <p class="text-center mt-3">Explore my technical projects in cybersecurity, IT automation, and asset management.</p>
+      <p class="text-center">Each project demonstrates problem-solving, efficiency, and security improvements in real-world scenarios.</p>
+      <div class="container" id="portefolio">
+        <div class="project-list">
+          <div class="project">
+            <img src="./images/picpython.png">
+            <div class="layer">
+              <h3>Malware Creation</h3>
+              <p>Developed a Python-based malware for educational purposes, capable of keylogging, screenshotting, encryption, and extracting sensitive information. <br>Deployed via phishing, it runs on the background, recording and securing data before sending it.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-5">
-            <img src="./images/Moneycounter.png" style="width: 350px; height: 100%;">
-          </div>
-        </div>
-      </div>
-      <div class="container px-4" style="margin-top: 130px;">
-        <div class="row gx-5">
-          <div class="col-12 col-lg-7">
-            <div>
-              <img src="./images/python.png" style="width: 600px; height: 100%; margin-top: -30px;">
+          <div class="project">
+            <img src="./images/wpic.png">
+            <div class="layer">
+              <h3>Wazuh Deployment</h3>
+              <p>Implemented Wazuh Server and deployed agents via group policies to secure 60+ company machines. <br>Wazuh provides real-time monitoring, detects vulnerabilities, and alerts on unauthorized access or malware activity.</p>
             </div>
           </div>
-          <div class="col-12 col-lg-5">
-            <h2 class="mb-3">Creation of a Malware</h2>
-            <div class="justify">
-              <p>
-                This project focused on developing a <strong>malware</strong> using Python, equipped with various features such as keylogging, information theft, screenshots, and encryption/decryption.
-              </p>
-              <p>
-                With this <strong>malware</strong>, the user would receive all captured information via email, along with a decryption key to access the encrypted data, ensuring no traces were left on the victim's machine.
-              </p>
+          <div class="project">
+            <img src="./images/PPIC.png">
+            <div class="layer">
+              <h3>PowerShell AD Automation</h3>
+              <p>Developed a PowerShell script to automate user and group management in Active Directory. <br>It ensures groups exist before adding members, streamlining onboarding, enforcing consistency, and improving operational efficiency.</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./images/ppic2.png">
+            <div class="layer">
+              <h3>GLPI Integration</h3>
+              <p>Implemented GLPI for IT asset and inventory management, deploying agents to 15+ machines via group policies. <br>It centralizes hardware/software tracking, improves IT governance, and enhances security by detecting shadow applications.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="contact-section">
-      <div class="container container-titles-projects mt-5 mb-5">
+  </div>
+      <div class="contact-section">
+      <div class="container container-titles-projects mb-5">
           <a id="contacts-me"></a>
           <h3 class="text-center">CONTACTS</h1>
           <div class="small-bar text-center"></div>
