@@ -212,10 +212,10 @@ h3 {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 20px; /* Space between grid items */
-  justify-items: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
 .skills {
