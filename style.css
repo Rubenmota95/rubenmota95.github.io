@@ -300,22 +300,21 @@ div > button {
   outline: none;
 }
 
-.button-send {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  display: block;
+a .button {
+  all: unset; /* Resets default button styles */
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none!important;
 }
+a.button {
+  text-decoration: none; /* Ensures the anchor tag has no underline */
+}
+
+a.button:hover {
+  text-decoration: none; /* Prevents underline on hover */
+}
+
 
 .button:hover {
   background-color: #5ae124;
@@ -360,29 +359,36 @@ div > button {
 }
 
 .btn-projects-send {
-  background-image: linear-gradient(to right, #41aa10 0%, #17cac7  51%, #4ccb11  100%);
-  margin: 10px;
-  padding: 1px 14px;
-  text-align: center;
+  padding: 1.3em 3em;
+  font-size: 20px; /* Keeping your original size */
   text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 7px #eee;
-  border-radius: 70px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 70px; /* Keeping your original roundness */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
   display: block;
-  text-decoration: none;
-  font-family: 'Overpass', sans-serif;
-  border: 0;
-  font-size: 20px;
-  text-transform: capitalize;
+  text-align: center;
+  margin: 20px auto; /* Centering the button */
+  width: fit-content;
 }
 
 .btn-projects-send:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-color: #5ae124;
+  box-shadow: 0px 15px 20px rgba(42, 107, 81, 0.4);
   color: #fff;
-  text-decoration: none!important;
+  transform: translateY(-7px);
 }
+
+.btn-projects-send:active {
+  transform: translateY(-1px);
+}
+
 
 .btn-projects-contact-me{
   background-image: linear-gradient(to right, #41aa10 0%, #17cac7  51%, #4ccb11  100%);
