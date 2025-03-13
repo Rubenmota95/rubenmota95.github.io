@@ -170,7 +170,7 @@ h3 {
 } */
 
 .header-text{
-  padding-top: 27%;
+  padding-top: 32%;
   font-size: 30px!important;
 }
 
@@ -554,13 +554,13 @@ html {
     color: white;
     font-weight: 500;
     margin-bottom: 20px;
-    font-size: 1.2rem!important;
+    font-size: 25px!important;
     font-family: 'Overpass', sans-serif;
 }
 
 .project p{
   color: white;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 .layer {
@@ -578,7 +578,7 @@ html {
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   transition: height 0.5s;
 }
 
@@ -592,9 +592,9 @@ html {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  display: flex; /* Ensures flex behavior */
-  align-items: center; /* Centers vertically */
-  justify-content: center; /* Centers horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center!important;
 }
 
