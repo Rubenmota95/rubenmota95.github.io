@@ -77,12 +77,13 @@ body {
 
 .tab-contents ul li{
   list-style: none;
+  font-size: 16px;
   margin: 10px 0;
 }
 
 .tab-contents ul li span{
   color: #5ae124;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .tab-contents{
@@ -634,8 +635,8 @@ html {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
   margin-top: 50px;
   align-items: stretch;
 }
