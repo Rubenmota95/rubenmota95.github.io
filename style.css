@@ -379,25 +379,17 @@ div > button {
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
-  cursor: pointer!important;
+  cursor: pointer;
+  text-decoration: none!important;
   outline: none;
 }
 
 a .button {
-  all: unset; /* Resets default button styles */
   display: inline-block;
   text-align: center;
   margin-top: 20px;
   text-decoration: none!important;
 }
-a.button {
-  text-decoration: none; /* Ensures the anchor tag has no underline */
-}
-
-a.button:hover {
-  text-decoration: none; /* Prevents underline on hover */
-}
-
 
 .button:hover {
   background-color: #5ae124;
